@@ -70,7 +70,7 @@ handobjectconsist/
 
 `wget TODO_add_path`
 
-`unzip releasemodels.zip .`
+`unzip releasemodels.zip`
 
 - *Optionally*, resize the images (speeds up training !)
   - `python reduce_fphab.py`
