@@ -15,7 +15,7 @@ dependencies:
   - moviepy
   - numpy
   - pillow
-  - pytorch
+  - pytorch=1.4
   - scikit-image
   - torchvision
   - trimesh
@@ -30,3 +30,4 @@ dependencies:
     - opencv-python
     - git+https://github.com/hassony2/manopth.git
     - git+https://github.com/hassony2/libyana
+    - neural_renderer_pytorch
