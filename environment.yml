@@ -26,8 +26,8 @@ dependencies:
   - pythreejs
   - pip:
     - chumpy
-    - kornia
+    - kornia=0.2
     - opencv-python
     - git+https://github.com/hassony2/manopth.git
     - git+https://github.com/hassony2/libyana
-    - neural_renderer_pytorch
+    - neural-renderer-pytorch
