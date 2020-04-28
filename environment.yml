@@ -1,0 +1,32 @@
+name: handobject_env
+channels:
+  - menpo
+  - pytorch
+  - defaults
+  - conda-forge
+  - ananconda
+dependencies:
+  - cupy
+  - joblib
+  - opencv
+  - pandas
+  - python=3.7
+  - matplotlib
+  - moviepy
+  - numpy
+  - pillow
+  - pytorch
+  - scikit-image
+  - torchvision
+  - trimesh
+  - tqdm
+  - cupy
+  - pip
+  - plotly
+  - pythreejs
+  - pip:
+    - chumpy
+    - kornia
+    - opencv-python
+    - git+https://github.com/hassony2/manopth.git
+    - git+https://github.com/hassony2/libyana
