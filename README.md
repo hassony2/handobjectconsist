@@ -70,7 +70,7 @@ handobjectconsist/
 
 `wget TODO_add_path`
 
-`unzip releasemodels.zip .`
+`unzip releasemodels.zip`
 
 - *Optionally*, resize the images (speeds up training !)
   - `python reduce_fphab.py`
@@ -125,7 +125,7 @@ Run the training code
 Train baseline model of **entire** FPHAB (100% of the data is supervised with 3D annotations)
 
 ```sh
-python trainmeshreg.py --freeze_batchnorm --workers 8 --block_rot`
+python trainmeshreg.py --freeze_batchnorm --workers 8 --block_rot
 ```
 
 ### Train in sparsely annotated setting
@@ -134,7 +134,7 @@ python trainmeshreg.py --freeze_batchnorm --workers 8 --block_rot`
 - **Step 1**: Train baseline model on a fraction of the FPHAB dataset (here 0.65%)
 
 ```sh
-python trainmeshreg.py --freeze_batchnorm --workers 8 --fraction 0.00625 --eval_freq 50 `
+python trainmeshreg.py --freeze_batchnorm --workers 8 --fraction 0.00625 --eval_freq 50
 ```
 
 - **Step 2**: Resume training, adding photometric supervision

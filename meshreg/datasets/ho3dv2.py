@@ -10,7 +10,6 @@ import torch
 from manopth import manolayer
 
 from meshreg.datasets import ho3dfullutils, ho3dv2utils
-from meshreg.datasets import manoutils
 from meshreg.datasets.queries import BaseQueries, get_trans_queries
 from libyana.meshutils import meshnorm
 
@@ -92,7 +91,6 @@ class HO3DV2:
             np.float32
         )
         self.cam_extr = np.array([[1, 0, 0, 0], [0, -1, 0, 0], [0, 0, -1, 0], [0, 0, 0, 1]])
-        self.mano_can = manoutils.load_manocan(models_root="assets/mano")
         self.layer = manolayer.ManoLayer(
             joint_rot_mode="axisang",
             use_pca=False,
