@@ -4,7 +4,7 @@ channels:
   - pytorch
   - defaults
   - conda-forge
-  - ananconda
+  - anaconda
 dependencies:
   - cupy
   - joblib
