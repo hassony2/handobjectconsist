@@ -2,8 +2,8 @@
 
 Yana Hasson, Bugra Tekin, Federica Bogo, Ivan Laptev, Marc Pollefeys, and Cordelia Schmid
 
-[Project page](https://hassony2.github.io/handobjectconsist.html)
-[Paper](http://arxiv.org/abs/2004.13449)
+- [Project page](https://hassony2.github.io/handobjectconsist.html)
+- [Paper](http://arxiv.org/abs/2004.13449)
 
 ### Table of Content
 
