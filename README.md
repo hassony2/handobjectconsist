@@ -14,7 +14,7 @@ Yana Hasson, Bugra Tekin, Federica Bogo, Ivan Laptev, Marc Pollefeys, and Cordel
 - [Training](#training)
   - [Train model for joint hand-object pose estimation](#baseline-model-for-joint-hand-object-pose-estimation)
   - [Train in sparsely annotated setting on FPHAB dataset](#train-in-sparsely-annotated-setting)
-- [Acknowledgements](#acknowledgement)
+- [Acknowledgements](#acknowledgements)
 
 
 # Setup
