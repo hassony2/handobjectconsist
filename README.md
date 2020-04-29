@@ -38,7 +38,7 @@ conda activate handobject_env
 - Go to [MANO website](http://mano.is.tue.mpg.de/)
 - Create an account by clicking *Sign Up* and provide your information
 - Download Models and Code (the downloaded file should have the format mano_v*_*.zip). Note that all code and data from this download falls under the [MANO license](http://mano.is.tue.mpg.de/license).
-- unzip and copy the content of the *models* folder into the misc/mano folder
+- unzip and copy the content of the *models* folder into the `assets/mano` folder
 
 
 - Your structure should look like this:
