@@ -66,7 +66,7 @@ handobjectconsist/
 
 `tar -xvf assets/fhbhands_fits.tgz -C assets/`
 
-- Download **pre-trained models** from [release](https://github.com/hassony2/handobjectconsist/releases/download/v0.1/releasemodels.zip)
+- Download [pre-trained models](https://github.com/hassony2/handobjectconsist/releases/download/v0.1/releasemodels.zip)
 
 `wget https://github.com/hassony2/handobjectconsist/releases/download/v0.1/releasemodels.zip`
 
