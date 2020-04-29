@@ -3,7 +3,7 @@
 Yana Hasson, Bugra Tekin, Federica Bogo, Ivan Laptev, Marc Pollefeys, and Cordelia Schmid
 
 [Project page](https://hassony2.github.io/handobjectconsist.html)
-[Paper](TODO)
+[Paper](http://arxiv.org/abs/2004.13449)
 
 ### Table of Content
 
@@ -14,7 +14,7 @@ Yana Hasson, Bugra Tekin, Federica Bogo, Ivan Laptev, Marc Pollefeys, and Cordel
 - [Training](#training)
   - [Train model for joint hand-object pose estimation](#baseline-model-for-joint-hand-object-pose-estimation)
   - [Train in sparsely annotated setting on FPHAB dataset](#train-in-sparsely-annotated-setting)
-- [Acknowledgements](#acknowledgements)
+- [Acknowledgements](#acknowledgement)
 
 
 # Setup
@@ -66,9 +66,9 @@ handobjectconsist/
 
 `tar -xvf assets/fhbhands_fits.tgz -C assets/`
 
-- Download **pre-trained models** from [TODO](add final link)
+- Download **pre-trained models** from [release](https://github.com/hassony2/handobjectconsist/releases/download/v0.1/releasemodels.zip)
 
-`wget TODO_add_path`
+`wget https://github.com/hassony2/handobjectconsist/releases/download/v0.1/releasemodels.zip`
 
 `unzip releasemodels.zip`
 
@@ -95,7 +95,7 @@ releasemodels/
 
 *Optional*: Download the [HO3D-v2](https://files.icg.tugraz.at/d/76661ed06445490ab21c/) dataset.
 Note that all results in our paper are reported on a **subset** of the current dataset which was published as an [early release](https://arxiv.org/abs/1907.01481v1).
-The results are therefore *not directly comparable* with the [final published results](https://arxiv.org/abs/1907.01481) which are reported on the v2 veresion of the dataset.
+The results are therefore *not directly comparable* with the [final published results](https://arxiv.org/abs/1907.01481) which are reported on the v2 version of the dataset.
 
 # Demo
 
@@ -108,7 +108,7 @@ python visualize.py
 This script loads three models and visualizes their predictions on samples from the test split of FPHAB:
 
 - a model trained one the full FPHAB dataset
-- a model trained with only a fraction (<1%) of the full ground truth annotationsd finetuned **with** photometric consistency
+- a model trained with only a fraction (<1%) of the full ground truth annotations finetuned **with** photometric consistency
 - a control model trained with the same fraction of the full ground truth annotations finetuned **without** photometric consistency
 
 It produces images such as the following:
