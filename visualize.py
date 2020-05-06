@@ -185,9 +185,9 @@ if __name__ == "__main__":
         "--resumes",
         nargs="+",
         default=[
-            "releasemodels/fphab/hands_and_objects/checkpoint_200.pth.tar",
-            "releasemodels/fphab/warp_effect/no_consist/frac_6.3e-03/checkpoint_1200.pth.tar",
-            "releasemodels/fphab/warp_effect/with_consist/frac_6.3e-03/checkpoint_1200.pth.tar",
+            "releasemodels/fphab/hands_and_objects/checkpoint_200.pth",
+            "releasemodels/fphab/warp_effect/no_consist/frac_6.3e-03/checkpoint_1200.pth",
+            "releasemodels/fphab/warp_effect/with_consist/frac_6.3e-03/checkpoint_1200.pth",
         ],
     )
     parser.add_argument(

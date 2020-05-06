@@ -50,7 +50,6 @@ handobjectconsist/
       MANO_LEFT.pkl
       MANO_RIGHT.pkl
       fhb_skel_centeridx9.pkl
-  visualize.py
 ```
 
 ## Download datasets
@@ -84,6 +83,8 @@ data/
     Video_files_480/  # Optional, created by reduce_fphab.py script
     Subects_info/
     Object_models/
+    Hand_pose_annotation_v1/
+    Object_6D_pose_annotation_v1_1/
 assets/
   fhbhands_fits/
 releasemodels/
@@ -143,11 +144,11 @@ Step 1 will have produced a trained model which will be saved in a subdirectory 
 
 Step 2 will **resume** training from this model, and further train with the additional photometric consistency loss on the frames for which the ground truth annotations are not used.
 
-`python trainmeshwarp.py --freeze_batchnorm --consist_gt_refs --workers 8 --fraction 0.00625 --resume checkpoints/path/to/saved/checkpoint.pth.tar`
+`python trainmeshwarp.py --freeze_batchnorm --consist_gt_refs --workers 8 --fraction 0.00625 --resume checkpoints/path/to/saved/checkpoint.pth`
 
 - *Optional*: For fair comparison (same number of training epochs), training can also be resumed **without** photometric consistency (this shows that the improvement does not come simply from longer training)
 
-`python trainmeshwarp.py --freeze_batchnorm --consist_gt_refs --workers 8 --fraction 0.00625 --resume checkpoints/path/to/saved/checkpoint.pth.tar --lambda_data 1 --lambda_consist 0`
+`python trainmeshwarp.py --freeze_batchnorm --consist_gt_refs --workers 8 --fraction 0.00625 --resume checkpoints/path/to/saved/checkpoint.pth --lambda_data 1 --lambda_consist 0`
 
 ## Citation
 
