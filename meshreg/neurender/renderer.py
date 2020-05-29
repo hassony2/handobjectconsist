@@ -35,7 +35,7 @@ class Renderer(nn.Module):
         no_light=False,
     ):
         """
-        Wrapper on top of 
+        Wrapper on top of neural_renderer renderer
         """
         super(Renderer, self).__init__()
         # rendering
