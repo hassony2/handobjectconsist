@@ -11,7 +11,8 @@ from meshreg.models.meshregnet import MeshRegNet
 
 
 def load_opts(resume_checkpoint):
-    if resume_checkpoint.endswith("tar"):
+    # Identify if folder or checkpoint is provided
+    if resume_checkpoint.endswith(".pth"):
         resume_checkpoint = os.path.join(*resume_checkpoint.split("/")[:-1])
     opt_path = os.path.join(resume_checkpoint, "opt.pkl")
     with open(opt_path, "rb") as p_f:

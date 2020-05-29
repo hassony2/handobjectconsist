@@ -33,15 +33,10 @@ def main(args):
         f"checkpoints/{dat_str}_{split_str}_mini{args.mini_factor}/{now.year}_{now.month:02d}_{now.day:02d}/"
         f"{args.com}_frac{args.fraction:.1e}"
         f"lr{args.lr}_mom{args.momentum}_bs{args.batch_size}_"
-        f"_lmv2d{args.mano_lambda_verts2d:.1e}_lmv3d{args.mano_lambda_verts3d:.1e}"
-        f"_lmj2d{args.mano_lambda_joints2d:.1e}_lmj3d{args.mano_lambda_joints3d:.1e}"
         f"_lmbeta{args.mano_lambda_shape:.1e}"
         f"_lmpr{args.mano_lambda_pose_reg:.1e}"
         f"_lmrj3d{args.mano_lambda_recov_joints3d:.1e}"
-        f"_lmrw3d{args.mano_lambda_recov_verts3d:.1e}"
-        f"_lov2d{args.obj_lambda_verts2d:.1e}_lov3d{args.obj_lambda_verts3d:.1e}"
         f"_lovr3d{args.obj_lambda_recov_verts3d:.1e}"
-        f"_cj{args.center_jittering:.1e}_sj{args.scale_jittering}"
         f"seed{args.manual_seed}"
     )
     if args.no_augm:

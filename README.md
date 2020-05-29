@@ -67,7 +67,7 @@ handobjectconsist/
 
 - Download [pre-trained models](https://github.com/hassony2/handobjectconsist/releases/download/v0.1/releasemodels.zip)
 
-`wget https://github.com/hassony2/handobjectconsist/releases/download/v0.1/releasemodels.zip`
+`wget https://github.com/hassony2/handobjectconsist/releases/download/v0.2/releasemodels.zip`
 
 `unzip releasemodels.zip`
 
@@ -108,7 +108,7 @@ python visualize.py
 
 This script loads three models and visualizes their predictions on samples from the test split of FPHAB:
 
-- a model trained one the full FPHAB dataset
+- a model trained on the full FPHAB dataset
 - a model trained with only a fraction (<1%) of the full ground truth annotations finetuned **with** photometric consistency
 - a control model trained with the same fraction of the full ground truth annotations finetuned **without** photometric consistency
 
