@@ -163,6 +163,11 @@ If you find this code useful for your research, consider citing our paper:
 }
 ```
 
+## To fix
+
+Thanks to [Samira Kaviani](https://www.roboticvision.org/rv_person/samira-kaviani/) for spotting that in Table 2. the splits are different because I previously filtered out frames for which hands are further than 10cm away from the object !
+I will rerun the results beginning September and update them here.
+
 ## Acknowledgements
 
 ### Code
