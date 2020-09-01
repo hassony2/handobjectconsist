@@ -2,7 +2,6 @@ assets
 checkpoints/
 refinecheckpoints/
 data/
-figures/
 misc/
 optimresults/
 __pycache__/
