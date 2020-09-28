@@ -9,7 +9,6 @@ from libyana.evalutils.zimeval import EvalUtil
 
 from meshreg.datasets.queries import BaseQueries
 from meshreg.netscripts import evaluate
-from meshreg.neurender import fastrender
 from meshreg.visualize import samplevis, evalvis
 from meshreg.visualize import consistdisplay
 

@@ -65,7 +65,7 @@ handobjectconsist/
 
 `tar -xvf assets/fhbhands_fits.tgz -C assets/`
 
-- Download [pre-trained models](https://github.com/hassony2/handobjectconsist/releases/download/v0.1/releasemodels.zip)
+- Download [pre-trained models](https://github.com/hassony2/handobjectconsist/releases/download/v0.3/releasemodels.zip)
 
 `wget https://github.com/hassony2/handobjectconsist/releases/download/v0.2/releasemodels.zip`
 
@@ -94,9 +94,32 @@ releasemodels/
 
 ### HO3D
 
-*Optional*: Download the [HO3D-v2](https://files.icg.tugraz.at/d/76661ed06445490ab21c/) dataset.
-Note that all results in our paper are reported on a **subset** of the current dataset which was published as an [early release](https://arxiv.org/abs/1907.01481v1).
+#### CVPR 2020
+
+Note that all results in our paper are reported on a **subset** of the current dataset which was published as an [early release](https://arxiv.org/abs/1907.01481v1), additionally we used synthetic data which is not released.
 The results are therefore *not directly comparable* with the [final published results](https://arxiv.org/abs/1907.01481) which are reported on the v2 version of the dataset.
+
+#### Codalab challenge pre-trained model
+
+After submisison I retrained a baseline model on the current dataset (official release of HO3D, which I refer to as HO3D-v2). You can get the model from the releasemodels
+
+Evaluate the pre-trained model:
+
+- Download [pre-trained models](https://github.com/hassony2/handobjectconsist/releases/download/v0.3/releasemodels.zip)
+
+- Extract the pre-trained models `unzip releasemodels.zip`
+
+- Run the evaluation code and generate the codalab submission file
+
+`python evalho3dv2.py  --resume releasemodels/ho3dv2/realonly/checkpoint_200.pth --val_split test --json_folder jsonres/res`
+
+This will create a file 'pred.zip' ready for upload to the [codalab challenge](https://competitions.codalab.org/competitions/22485)
+
+#### Training model on HO3D-v2
+
+- Download the [HO3D-v2](https://files.icg.tugraz.at/d/76661ed06445490ab21c/) dataset.
+
+- launch training using `python trainmeshreg` and providing all arguments as in `releasemodels/ho3dv2/realonly/opt.txt`
 
 # Demo
 

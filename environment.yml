@@ -1,5 +1,6 @@
 name: handobject_env
 channels:
+  - open3d-admin
   - menpo
   - pytorch
   - defaults
@@ -9,6 +10,7 @@ dependencies:
   - cupy
   - joblib
   - opencv
+  - open3d=0.9
   - pandas
   - python=3.7
   - pyyaml

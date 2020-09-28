@@ -253,7 +253,7 @@ if __name__ == "__main__":
     parser.add_argument("--no_augm", action="store_true", help="Prevent all data augmenation")
     parser.add_argument("--block_rot", action="store_true", help="Prevent rotation during data augmentation")
     parser.add_argument("--max_rot", default=0, type=float, help="Max rotation for data augmentation")
-    parser.add_argument("--version", default=1, type=int, help="Version of HO3D dataset to use")
+    parser.add_argument("--version", default=3, type=int, help="Version of synthetic HO3D dataset to use")
     parser.add_argument("--center_idx", default=9, type=int)
     parser.add_argument(
         "--center_jittering", type=float, default=0.1, help="Controls magnitude of center jittering"
